@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: plpelleg <plpelleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/09 23:05:28 by plpelleg          #+#    #+#             */
-/*   Updated: 2022/09/14 18:52:22 by plpelleg         ###   ########.fr       */
+/*   Created: 2022/09/14 18:41:49 by plpelleg          #+#    #+#             */
+/*   Updated: 2022/09/14 19:29:46 by plpelleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string name)
-{
-	this->name = name;
-}
+Zombie *zombieHorde(int N, std::string name);
 
-void Zombie::announce()
+int main()
 {
-	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-}
-
-Zombie::~Zombie(void)
-{
-	std::cout << name << ": Sto a morí!" << std::endl;
+	Zombie *zombieArr = zombieHorde(10, "Zombie");
+	for (int i = 0; i < 10; i++)
+		zombieArr[i].announce();
+	delete [] zombieArr;
+	return (0);
 }
