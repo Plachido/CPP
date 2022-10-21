@@ -18,28 +18,31 @@ void transcribe_replace(std::ifstream& input, std::ofstream& output, char* origi
 	char c;
 	int i;
 	int len;
+	std::string buffer = "";
 	i = 0;
 	len = strlen(original);
 	while (input >> std::noskipws >> c)
 	{
 		if (c == original[i])
 		{
+			buffer += c;
 			if (i == (len - 1))
 			{
-				printf("i == len - 1\n");
 				output << replace;
-				i = -1;
+				i = 0;
 			}
 			i++;
 		}
 		else if (i && i < len -1)
 		{
-			output.write(original, i);
+			buffer += c;
+			output << buffer;
+			buffer = "";
 			i = 0;
 		}
 		else
 		{
-			printf("standard writing...\n");
+			buffer = "";
 			output << c;
 		}
 	}

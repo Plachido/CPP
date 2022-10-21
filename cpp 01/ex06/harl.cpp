@@ -52,14 +52,3 @@ void Harl::complain(std::string level)
 		(this->*levels[i])();
 	
 };
-
-int main(int argc, char** argv)
-{
-	if (argc > 1)
-	{
-		Harl H;
-		H.complain(argv[1]);
-	}
-	else
-		std::cout << "Wrong number of arguments" << std::endl;
-}

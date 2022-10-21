@@ -25,5 +25,5 @@ int main()
 	std::cout << str << std::endl;
 	std::cout << *stringPTR<< std::endl;
 	std::cout << stringREF << std::endl;
-	return(0)
+	return(0);
 }

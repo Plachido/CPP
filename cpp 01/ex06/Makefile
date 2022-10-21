@@ -1,6 +1,6 @@
-NAME =	harl
+NAME =	harlFilter
 
-SRCS =	harl.cpp
+SRCS =	harl.cpp harlfilter.cpp
 
 OBJS =	$(SRCS:.cpp=.o)
 
