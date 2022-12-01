@@ -2,11 +2,14 @@
 # define FORM_HPP
 
 #include "bureaucrat.hpp"
+
+class Bureaucrat;
+
 class Form
 {
     private:
         const std::string _name;
-        bool _is_signed = 0;
+        bool _is_signed;
         const int _gradeToSign;
         const int  _gradeToExecute;
         int _grade;

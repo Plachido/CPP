@@ -6,7 +6,7 @@
 /*   By: plpelleg <plpelleg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 20:12:00 by plpelleg          #+#    #+#             */
-/*   Updated: 2022/12/01 20:12:51 by plpelleg         ###   ########.fr       */
+/*   Updated: 2022/12/01 20:50:40 by plpelleg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int main ()
 {
     std::cout << std::endl;
-    Form        form_prova("Modulo 1", 224, 1);
+    Form        form_prova("Modulo 1", 2, 2);
     Bureaucrat  j("Julius", 15);
     Bureaucrat  a("Andrew", 24);
     try
