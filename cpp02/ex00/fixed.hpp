@@ -17,6 +17,4 @@ class Fixed
 		~Fixed(void);
 };
 
-
-
 #endif

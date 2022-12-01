@@ -1,4 +1,4 @@
-NAME =	claptrap
+NAME =	scavtrap
 
 SRCS =	claptrap.cpp scavtrap.cpp main.cpp
 

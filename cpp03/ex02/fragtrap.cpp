@@ -19,3 +19,8 @@ void FragTrap::highFivesGuys()
 {
 	std::cout << "FragTrap " << (this->getName()) << " desperatly asks for a high five" << std::endl;
 }
+
+FragTrap::FragTrap( FragTrap const & src ) : ClapTrap( src )
+{
+    std::cout << "FragTrap Copy constructor called" << std::endl;
+}
